@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto-Verse</title>
+    <link rel="shortcut icon"
+        href="https://images.vexels.com/media/users/3/242802/isolated/preview/cef1e58e886cdcb9a641cfe01455e13b-small-car-profile-semi-flat.png"
+        type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body class="bg-gray-100">
+    <nav class="h-[70px] bg-white border-gray-200 dark:bg-gray-900 drop-shadow-xl">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img src="images/car-clipart-xl.png" class="h-10" alt="Flowbite Logo" />
+                <span class="self-center text-2xl font-semibold whitespace-nowrap text-blue-900">Auto-Verse</span>
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="block md:hidden text-blue-900 focus:outline-none text-3xl">
+                ☰
+            </button>
+
+            <!-- PC View Dropdowns & Search Button -->
+            <div class="hidden md:flex gap-9 items-center">
+                <select id="brands" onchange="handleChange()" class="px-4 py-2 w-52 bg-blue-600 text-white font-semibold rounded-md text-[17px] outline-none border-2 border-blue-500 focus:border-blue-500 hover:bg-blue-500">
+                    <option value="" selected>Select Brand</option>
+                </select>
+
+                <select id="models" class="px-4 py-2 w-52 bg-green-500 text-white font-semibold rounded-md text-[17px] outline-none border-2 border-green-500 focus:border-green-500 hover:bg-green-500">
+                    <option value="" selected>Select Model</option>
+                </select>
+
+                <button id="search-btn" onclick="searchCar()" class="cursor-pointer px-3 py-2 w-26 text-lg bg-white text-blue-600 border-2 border-blue-600 rounded-lg hover:bg-blue-700 hover:text-white">
+                    Search
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdowns & Search -->
+        <div id="menu"
+            class="hidden flex flex-col items-center gap-4 bg-[#F4FDFF] text-white p-6 w-full text-center  max-h-0 ">
+            <select id="brands" onchange="handleChange()" class="px-4 py-2 w-52 bg-blue-600 text-white font-semibold rounded-md text-[17px] outline-none border-2 border-blue-500 focus:border-blue-500 hover:bg-blue-500">
+                <option value="" selected>Select Brand</option>
+            </select>
+
+            <select id="models" class="px-4 py-2 w-52 bg-green-500 text-white font-semibold rounded-md text-[17px] outline-none border-2 border-green-500 focus:border-green-500 hover:bg-green-500">
+                <option value="" selected>Select Model</option>
+            </select>
+
+            <button onclick="searchCar()" class="cursor-pointer px-3 py-2 w-26 text-lg bg-white text-blue-600 border-2 border-blue-600 rounded-lg hover:bg-blue-700 hover:text-white">
+                Search
+            </button>
+        </div>
+    </nav>
+
+    <!-- Empty Div to Push Content Below Menu -->
+    <div id="content" class="transition-all duration-300"></div>
+ 
+
+    <main id="card" class=" flex justify-center flex-wrap gap-3 w-full">
+        
+    </main>
+    
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="app.js"></script>
+    
+
+
+    <footer class="bg-gray-900 text-white py-10 mt-10">
+        <div class="max-w-screen-xl mx-auto px-5 md:px-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div>
+                <h2 class="text-2xl font-semibold text-blue-500">Auto-Verse</h2>
+                <p class="mt-3 text-gray-400">
+                    Discover amazing cars with Auto-Verse . Your one-stop destination for top brands and models.
+                </p>
+            </div>
+    
+            <div>
+                <h3 class="text-lg font-semibold text-gray-300 mb-3">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Home</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Brands</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Models</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-blue-400 transition">Contact Us</a></li>
+                </ul>
+            </div>
+    
+                <div>
+                <h3 class="text-lg font-semibold text-gray-300 mb-3">Contact Us</h3>
+                <p class="text-gray-400">Email: support@autoVerse.com</p>
+                <p class="text-gray-400">Phone: +123 456 7890</p>
+                <div class="flex gap-4 mt-4">
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition text-2xl">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition text-2xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition text-2xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-5">
+            © 2025 Auto-Verse . All rights reserved.
+        </div>
+    </footer>
+    
+    
+</body>
+
+</html>
+
+
+     <!--  Sold Wala Card:
+        <div class="relative h-[430px] w-76 bg-white drop-shadow-xl mt-8 ml-4 rounded-lg overflow-hidden">
+            <div class="absolute top-0 left-0 bg-red-700 text-white font-bold px-6 py-1 rounded-br-lg shadow-lg animate-fadeIn">
+                <span class="inline-block">Sold</span>
+            </div>
+        </div> -->

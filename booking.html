@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center  md:my-2">
+    <div class="bg-white p-8 rounded-lg shadow-xl w-full max-w-md">
+        <h2 class="text-2xl font-bold text-blue-900 mb-4 text-center">Book Your Dream Car!</h2>
+        <form>
+            <label class="block mb-2 text-gray-700">Full Name</label>
+            <input type="text" class="w-full p-2 border rounded-md mb-4" placeholder="Enter your name" required>
+            
+            <label class="block mb-2 text-gray-700">Email</label>
+            <input type="email" class="w-full p-2 border rounded-md mb-4" placeholder="Enter your email" required>
+            
+            <label class="block mb-2 text-gray-700">Phone Number</label>
+            <input type="tel" class="w-full p-2 border rounded-md mb-4" placeholder="Enter your phone number" required>
+            
+            <label class="block mb-2 text-gray-700">Select Car</label>
+            <select class="w-full p-2 border rounded-md mb-4">
+                <option selected>Select Your Car</option>
+                <option>Toyota Corolla</option>
+                <option>Honda Civic</option>
+                <option>Ford Mustang</option>
+            </select>
+            
+            <label class="block mb-2 text-gray-700">Booking Date</label>
+            <input type="date" class="w-full p-2 border rounded-md mb-4" required>
+            
+            <label class="block mb-2 text-gray-700">Additional Message</label>
+            <textarea class="w-full p-2 border rounded-md mb-4" placeholder="Enter any additional details"></textarea>
+            
+            <button type="submit" class="w-full bg-blue-900 text-white py-2 rounded-md hover:bg-blue-800">Submit Booking</button>
+        </form>
+    </div>
+</body>
+</html>

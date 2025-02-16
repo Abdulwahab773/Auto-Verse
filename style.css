@@ -1,0 +1,16 @@
+body {
+    background-color: #fbfbfb;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes bounceSlow {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-3px); }
+  }
+  .animate-fadeIn {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  
