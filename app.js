@@ -244,7 +244,7 @@ function loadAllCars() {
                 <div class="h-16 w-full flex">
                     <div class="h-20 w-[50%] ml-0.5 flex">
                         <div class="w[30%]">
-                            <img src="/images/speedometre.png" width="80%">
+                            <img src="speedometre.png" width="80%">
                         </div>
                         <div class="w-[60%] mt-0.5">
                             <span class="text-gray-600 text-xs">MILEAGE(KM/LITER)</span>
@@ -253,7 +253,7 @@ function loadAllCars() {
                     </div>
                     <div class="h-20 w-[50%] ml-0.5 flex ">
                         <div class="w-[30%] mt-1 ml-6 ">
-                            <img src="./images/gas-station.png" width="90%">
+                            <img src="gas-station.png" width="90%">
                         </div>
                         <div class="w-[60%] ml-2">
                             <span class="text-gray-600 text-sm">Fuel Type:</span>
@@ -314,7 +314,7 @@ function searchCar() {
             <div class="h-16 w-full flex">
                 <div class="h-20 w-[50%] ml-0.5 flex">
                     <div class="w-[30%]">
-                        <img src="/images/speedometre.png" width="80%">
+                        <img src="speedometre.png" width="80%">
                     </div>
                     <div class="w-[60%] mt-0.5">
                         <span class="text-gray-600 text-xs">MILEAGE(KM/LITER)</span>
@@ -323,7 +323,7 @@ function searchCar() {
                 </div>
                 <div class="h-20 w-[50%] ml-0.5 flex">
                     <div class="w-[30%] mt-1 ml-6">
-                        <img src="/images/gas-station.png" width="90%">
+                        <img src="gas-station.png" width="90%">
                     </div>
                     <div class="w-[60%] ml-2">
                         <span class="text-gray-600 text-sm">Fuel Type:</span>
@@ -365,7 +365,7 @@ function searchCar() {
             <div class="h-16 w-full flex">
                 <div class="h-20 w-[50%] ml-0.5 flex">
                     <div class="w-[30%]">
-                        <img src="/images/speedometre.png" width="80%">
+                        <img src="speedometre.png" width="80%">
                     </div>
                     <div class="w-[60%] mt-0.5">
                         <span class="text-gray-600 text-xs">MILEAGE(KM/LITER)</span>
@@ -374,7 +374,7 @@ function searchCar() {
                 </div>
                 <div class="h-20 w-[50%] ml-0.5 flex">
                     <div class="w-[30%] mt-1 ml-6">
-                        <img src="/images/gas-station.png" width="90%">
+                        <img src="gas-station.png" width="90%">
                     </div>
                     <div class="w-[60%] ml-2">
                         <span class="text-gray-600 text-sm">Fuel Type:</span>
