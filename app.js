@@ -253,7 +253,7 @@ function loadAllCars() {
                     </div>
                     <div class="h-20 w-[50%] ml-0.5 flex ">
                         <div class="w-[30%] mt-1 ml-6 ">
-                            <img src="/images/gas-station.png" width="90%">
+                            <img src="./images/gas-station.png" width="90%">
                         </div>
                         <div class="w-[60%] ml-2">
                             <span class="text-gray-600 text-sm">Fuel Type:</span>
